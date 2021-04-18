@@ -8,7 +8,7 @@ class Complex//class creation Complex
 
 {
       double Re;
-	  double Im;
+      double Im;
 public:
 
       Complex (double aRe = 0, double aIm = 0);///Create complex number
