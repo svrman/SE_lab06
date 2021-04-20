@@ -7,7 +7,6 @@ using namespace std;
 class Complex								//объ€вление класса "комплексное число"
 
 {
-<<<<<<< HEAD
       	double Re;							//объ€вление параметров действительной части(закрыта€ переменна€)
 	    double Im;							//объ€вление параметров мнимой части(закрыта€ переменна€)
 public:									//тип доступа к описаным ниже методам(общий доступ)
@@ -44,45 +43,5 @@ friend Complex operator * (const double &, const Complex &);	//объ€вление дружес
        Complex & operator /= (const double &);				//объ€вление оператора /=, действительна€ переменна€
        Complex & operator = (const Complex &);				//объ€вление оператора присванивани€, комплексна€ переменна€
        Complex & operator = (const double &);				//объ€вление оператора присванивани€, действительна€ переменна€
-=======
-      double Re;
-      double Im;
-public:
-
-      Complex (double aRe = 0, double aIm = 0);///Create complex number
-      Complex (const Complex & );
-     ~Complex();
-
-void Set (double aRe, double aIm = 0);/// Assigns the complex number a new value.
-      operator double();
-      double abs();
-
-friend istream & operator >> (istream &, Complex &);
-friend ostream & operator << (ostream &, Complex &);
-
-      Complex operator + (const Complex &);
-      Complex operator - (const Complex &);
-      Complex operator + (const double &);
-
-friend Complex operator + (const double &, const Complex &);
-      Complex operator - (const double &);
-
-friend Complex operator - (const 	double &, const Complex &);
-      Complex operator * (const Complex &);
-      Complex operator * (const double &);
-
-friend Complex operator * (const double &, const Complex &);
-      Complex operator / (const double &);
-
-      Complex & operator += (const Complex &);/// Adds a number to the target complex number, where the number to add is complex.
-      Complex & operator -= (const Complex &);
-      Complex & operator *= (const Complex &);
-      Complex & operator += (const double &);
-      Complex & operator -= (const double &);
-      Complex & operator *= (const double &);
-      Complex & operator /= (const double &);
-      Complex & operator = (const Complex &);
-      Complex & operator = (const double &);
->>>>>>> e48fd95cbddc328b6e027420b4fc53dd164edda2
 };
 #endif
